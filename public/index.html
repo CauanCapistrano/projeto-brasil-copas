@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brasil nas Copas — Histórico Completo</title>
+<meta name="description" content="O histórico completo do Brasil em todas as Copas do Mundo, de 1930 a 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="pitch-noise" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="topbar__mark">CBF · 1914</span>
+    <span class="topbar__title">BRASIL NAS COPAS</span>
+    <a class="topbar__link" href="#linha-do-tempo">Ver linha do tempo →</a>
+  </div>
+  <div class="topbar__progress" id="scrollProgress"></div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__field" aria-hidden="true">
+      <div class="hero__circle"></div>
+      <div class="hero__halfline"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow">A única seleção presente em todas as edições</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">BRASIL</span>
+        <span class="hero__title-line hero__title-line--outline">NAS COPAS</span>
+      </h1>
+
+      <div class="scoreboard" id="heroScoreboard">
+        <div class="scoreboard__digit-wrap">
+          <span class="scoreboard__digit" id="titleCount">0</span>
+        </div>
+        <div class="scoreboard__label">
+          TÍTULOS<br>MUNDIAIS
+        </div>
+      </div>
+
+      <ul class="hero__stats" id="heroStats">
+        <li><strong>23</strong><span>participações</span></li>
+        <li><strong>2</strong><span>vice-campeonatos</span></li>
+        <li><strong>4</strong><span>pódios extras (3º/4º)</span></li>
+        <li><strong>1930–2026</strong><span>presente em todas as Copas</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LINHA DO TEMPO -->
+  <section class="timeline-section" id="linha-do-tempo">
+    <div class="timeline-section__header">
+      <h2>De 1930 a 2026, edição por edição</h2>
+      <p>23 Copas, um único país sempre em campo. Filtre por resultado para explorar a trajetória.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn is-active" data-filter="todos">Todas (23)</button>
+      <button class="filter-btn" data-filter="campeao">Títulos</button>
+      <button class="filter-btn" data-filter="vice">Vices</button>
+      <button class="filter-btn" data-filter="terceiro,quarto">3º / 4º lugar</button>
+      <button class="filter-btn" data-filter="eliminado">Eliminações precoces</button>
+    </div>
+
+    <ol class="timeline" id="timeline">
+      <!-- cards preenchidos via JS a partir de /api/copas -->
+    </ol>
+  </section>
+
+  <footer class="site-footer">
+    <p>Construído com Node.js + Express no back-end e JavaScript puro no front-end.</p>
+    <p class="site-footer__small">Dados de 2026 referentes à fase de grupos em curso e podem ser atualizados conforme os jogos acontecem.</p>
+  </footer>
+
+</main>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
