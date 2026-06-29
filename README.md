@@ -28,7 +28,7 @@ Acesse a pasta do projeto:
 cd seu-repositorio
 ```
 
-## 📦 Instalando as dependências
+##  Instalando as dependências
 
 Instale todas as dependências necessárias executando:
 
@@ -49,13 +49,13 @@ Após iniciar, a aplicação estará disponível em:
 ```text
 http://localhost:3000
 ```
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Node.js
 - Express.js
 - JavaScript
 
-## 👨‍💻 Autor
+## Autor
 
 Desenvolvido por **Cauan Capistrano e Vitor Chiquio**.
 
